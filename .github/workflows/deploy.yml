@@ -8,10 +8,10 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v1
         with:
-          host: ${{ 18.183.237.228 }}
+          host: 18.183.237.228
           username: root
-          password: ${{ Nftnft001 }}
-          port: ${{ 22 }}
+          password: Nftnft001
+          port: 22
           script: cd JPetStore-6
                   git pull origin master
                   ./mvnw clean package
