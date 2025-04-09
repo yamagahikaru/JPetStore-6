@@ -8,7 +8,7 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v1
         with:
-          host: 13.115.111.88
+          host: 54.249.178.21
           username: root
           password: Nftnft001
           port: 22
