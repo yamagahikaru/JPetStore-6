@@ -12,7 +12,8 @@ jobs:
           username: root
           password: Nftnft001
           port: 22
-          script: cd JPetStore-6
+          script: |
+                  cd JPetStore-6
                   git pull origin master
                   ./mvnw clean package
                   ./mvnw cargo:run -P tomcat90
